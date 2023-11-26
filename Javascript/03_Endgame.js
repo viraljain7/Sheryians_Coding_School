@@ -9,12 +9,13 @@
 // Pure and impure Function
 // Closure
 
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // Higher Order Function:-
 
 // Higher Order Function (HOF): A function that takes a function as an argument or returns a function
-
 //ab kis fns k arument me fns de yafr function return kiya jaye to wo HOF bolte
-
 const printHello = (name) => {
   console.log(`Print Hello ${name}`);
   return `Hello ${name}`;
@@ -25,6 +26,9 @@ const fun = (funName, name) => {
 };
 console.log(fun(printHello, "Viral")); // Invoking HOF with a function as an argument
 
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // Constructor Function
 // Constructor Function: A function used with the 'new' keyword to create objects
 function Car(modelName, engine, color) {
@@ -42,6 +46,9 @@ const maruti = new Car("Alto 300", "petrol", "black"); // Creating objects using
 const honda = new Car("Suzuki", "Diesel", "black");
 // console.log(`${honda.modelName} is ${honda.engine} car Model which color is ${honda.color}`);
 
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // First Class Function
 
 // First Class Function: Functions can be assigned to variables, passed as arguments, and returned from other functions
@@ -83,6 +90,9 @@ middleFunction(); // Final invocation
 
 createGreeter()()(); // Outputs: Greetings! //Another way
 
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // New Keyword
 // iife
 
@@ -95,10 +105,16 @@ createGreeter()()(); // Outputs: Greetings! //Another way
   // watch 31:00 at sheryians coding school
 })();
 
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // Prototype
 // Prototype: An object contains some inbuilt properties that are accessible through its prototype chain
 // object contains some inbuilt property that called as prototype
 
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // Prototypal Inheritance
 // Prototypal Inheritance: Objects can inherit properties and methods from other objects
 let human = {
@@ -114,6 +130,9 @@ let sheryiansStudent = {
 sheryiansStudent.__proto__ = human; // Setting up prototypal inheritance
 console.log(sheryiansStudent.canFly); // Accessing inherited property
 
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // 'this', 'call', 'apply', 'bind': Context-related concepts
 //this=> window is global scope kyun ki vo object{ }bracket is k ander nahi hai
 function abcd() {
@@ -138,6 +157,9 @@ abcd.apply(obj, [1, 4]); //call or apply return nahi krte hai
 let bindkaro = abcd.bind(obj, 1, 4); //bind return karta hai Aur to variable me save kar k baad use krskte hai
 bindkaro();
 
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // Pure and impure Function
 
 // pure fnc:- 1.it should always return same output for same Input input
@@ -157,4 +179,7 @@ let f1 = (a, b) => {
 };
 f1(2, 3);
 
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //Closure
